@@ -1,22 +1,45 @@
-# Luz
+# Cadastro de Alunos
 
-Um pequeno projeto em JavaScript para aprender e praticar desenvolvimento web.
+Aplicação web desenvolvida em JavaScript para cadastrar alunos, calcular a situação de acordo com a média e realizar buscas pelo nome.
 
-## Primeiros passos
+## Funcionalidades
 
-### Pré-requisitos
+- Cadastro de alunos e notas
+- Validação do nome e da nota
+- Exibição da média com uma casa decimal
+- Classificação como aprovado ou reprovado
+- Busca de alunos por nome
+- Destaque visual para alunos aprovados e reprovados
+- Mensagens para cadastro e campos inválidos
+- Mensagem quando nenhum aluno é encontrado
 
-- Um navegador moderno
-- [Node.js](https://nodejs.org/) versão 18 ou superior (opcional, caso o projeto utilize npm)
+O critério utilizado considera aprovados os alunos cuja média seja maior ou igual a 6.
 
-### Instalação
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Como executar
+
+Não é necessário instalar dependências.
+
+1. Faça o clone do repositório:
 
 ```bash
-git clone https://github.com/antoniocardosoneto6/Luz.git
-cd Luz
+git clone https://github.com/antoniocardosoneto6/Cadastro-de-Alunos.git
 ```
 
-Abra o arquivo `index.html` no navegador ou inicie um servidor local:
+2. Entre na pasta do projeto:
+
+```bash
+cd Cadastro-de-Alunos
+```
+
+3. Abra o arquivo `index.html` em um navegador moderno.
+
+Também é possível iniciar um servidor local:
 
 ```bash
 npx serve .
@@ -24,32 +47,27 @@ npx serve .
 
 ## Como usar
 
-Adicione aqui uma explicação sobre como utilizar o projeto e o que acontece ao acessar ou executar suas principais funcionalidades.
+1. Informe o nome do aluno.
+2. Informe uma nota entre 0 e 10.
+3. Clique em **Cadastrar**.
+4. Consulte o aluno na tabela.
+5. Utilize o campo **Buscar aluno** para filtrar os resultados pelo nome.
 
-## Funcionalidades
+## Estrutura do projeto
 
-- [ ] Incluir uma descrição clara do projeto
-- [ ] Listar as funcionalidades implementadas
-- [ ] Adicionar capturas de tela ou uma demonstração
-- [ ] Documentar a configuração e a execução
-- [ ] Incluir exemplos de uso
-- [ ] Adicionar uma licença
+```text
+Cadastro-de-Alunos/
+├── index.html
+├── estilo.css
+├── script.js
+└── README.md
+```
 
-## Tecnologias
-
-- HTML
-- CSS
-- JavaScript
-
-## Contribuindo
-
-Contribuições são bem-vindas.
-
-1. Faça um fork do repositório.
-2. Crie uma branch para a funcionalidade.
-3. Faça o commit das alterações.
-4. Abra um pull request.
+- `index.html`: estrutura da página e dos formulários
+- `estilo.css`: estilos, cores e estados visuais
+- `script.js`: cadastro, validação, busca e atualização da tabela
+- `README.md`: documentação do projeto
 
 ## Licença
 
-Especifique aqui a licença do projeto.
+Este projeto ainda não possui uma licença definida.
